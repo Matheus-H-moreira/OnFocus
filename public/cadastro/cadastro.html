@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <main>
         <div class="login-container">
@@ -16,8 +18,65 @@
                     <img src="imagens/logo.png" alt="ON Focus Logo">
                 </div>
             </div>
+
+            <div class="right-side">
+                <h1>CADASTRO</h1>
+                <form id="cadastroForm">
+                    <div class="form-group">
+                        <label for="nome">NOME COMPLETO</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+
+                        <label for="email">E-MAIL</label>
+                        <div class="input-with-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <label for="usuario">USUARIO</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="usuario" id="usuario" required>
+                        </div>
+
+                        <label for="senha">SENHA</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="senha" id="senha" required>
+                        </div>
+                        <div class="password-strength">
+                            <div class="strength-bar"></div>
+                            <span class="strength-text"></span>
+                        </div>
+
+                        <label for="confirmarSenha">CONFIRMAR SENHA</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="confirmarSenha" id="confirmarSenha" required>
+                        </div>
+
+                        <button type="submit" class="cadastro">
+                            <span>CRIAR CONTA</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
-    
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ON Focus. Todos os direitos reservados.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Termos de Uso</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
